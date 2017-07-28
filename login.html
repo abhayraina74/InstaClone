@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<div>
+    <form method="post">{% csrf_token %}
+         <input id="username" type="text" name="username" placeholder="Username"><br>
+
+        <input id="password" type="password" name="password" placeholder="Password"><br>
+
+        <input type="submit" value="Enter">
+    </form>
+</div>
+
+<div class="eye">
+    <button type="button" id="eye" onclick="if(password.type=='text')password.type='password'; else if(password.type='password')password.type='text';">
+    <img src="https://cdn0.iconfinder.com/data/icons/feather/96/eye-16.png">
+    </button>
+</div>
+<div class="bakchodi">Don't have an account? <a href="/">Signup</a></div>
+</body>
+</html>
